@@ -21,9 +21,9 @@ The UI is similar to the ingredients in a recipe. So lets list out the ingredien
  
 *SelectInput* lets the user choise the data set they want to see.
 
-*verbatimTextOutput* will later on help us print the output of hte data.
+*verbatimTextOutput* displays the code and will later help me print the data.
 
-*plotOutput* will later help us be able to plot the data.
+*plotOutput* displays the code and will later help me plot the data.
 
 Now lets focus on the server. The server is the directions in the recipe. The ingredients will be used as the directions describes them.
 
@@ -31,7 +31,7 @@ Now lets focus on the server. The server is the directions in the recipe. The in
 
 So lets list out the directions and what they do.
 
-First, I created a *reactive*. Reactive expressions let me control which parts of my app update when, which prevents unnecessary computation that can slow down my app. In this case, it optimizes the code by having less writen and increases the apps speed. 
+First, I created a *reactive*. Reactive expressions let me control which parts of my app update when, which prevents unnecessary computation that can slow down my app. In this case, it optimizes the code by having less code written which increases the apps speed. 
 
 *ouput$summary* variable is set to *renderPrint* which is paired with *verbatimTextOutput*. This is because the server side of the code uses a specific render function to wrap the code that is provided. 
 
@@ -39,11 +39,11 @@ Each render{Type} function is designed to produce a particular type of output (e
 
 In this case, the *renderPrint* prints a summary of the dataset.
 
-*output$plot* variable is set to *renderPlot* which is paried with *plotOuput*. The *plotOutput* plots the dataset. The resolution usually set to **96** so that the Shiny plots match what I see in RStudio as closely as possible.
+*output$plot* variable is set to *renderPlot* which is paried with *plotOutput*. The *plotOutput* plots the dataset. The resolution is usually set to **96** so that the Shiny plots match what I see in RStudio as closely as possible.
  
- <img width="150" alt="Screen Shot 2021-09-24 at 5 54 41 PM" src="https://user-images.githubusercontent.com/89553126/134747379-3c777c14-e246-4dfa-a397-ea8b88ae8a80.png">
+Finally, I write down the code *shinyApp(ui, server)* which constructs and starts the Shiny application from UI and server.
 
-*shinyApp(ui, server)* constructs and starts the Shiny application from UI and server.
+ <img width="150" alt="Screen Shot 2021-09-24 at 5 54 41 PM" src="https://user-images.githubusercontent.com/89553126/134747379-3c777c14-e246-4dfa-a397-ea8b88ae8a80.png">
  
 ### Finished Project: 
 
