@@ -13,14 +13,12 @@ First, I set a variable called *datasets* to contain the data.
 
 <img width="352" alt="Screen Shot 2021-09-24 at 5 29 28 PM" src="https://user-images.githubusercontent.com/89553126/134746200-6fbc815d-ff06-4cb2-ada1-34d71568e4e7.png">
   
-Afterwards, I created the UI (User Interface) for the shiny application.  
+Afterwards, I created the UI (User Interface) for the shiny application with a *fluidPage* layout. 
 
  <img width="405" alt="Screen Shot 2021-09-24 at 5 30 11 PM" src="https://user-images.githubusercontent.com/89553126/134746178-12913537-44e1-45b1-a7c5-dc5ce39c8e57.png">
   
 The UI is similar to the ingredients in a recipe. So lets list out the ingredients and what they do.
-
-*fluidPage* creates a page with a fluid layout.
-
+ 
 *SelectInput* lets the user choise the data set they want to see.
 
 *verbatimTextOutput* will later on help us print the output of hte data.
