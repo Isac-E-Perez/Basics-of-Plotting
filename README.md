@@ -9,9 +9,24 @@ Dataset available on the R package.
 
 ### Results: 
 
-<img width="711" alt="Screen Shot 2021-09-24 at 5 23 00 PM" src="https://user-images.githubusercontent.com/89553126/134745528-d83ef0e4-c6ea-4785-8f09-bc3da50e6106.png">
+First, I set a variable called *datasets* to contain the data.
 
-<img width="548" alt="Screen Shot 2021-09-24 at 5 22 29 PM" src="https://user-images.githubusercontent.com/89553126/134745531-8ba7f02d-64a7-4ee8-998f-506f4582bdbe.png">
+<img width="352" alt="Screen Shot 2021-09-24 at 5 29 28 PM" src="https://user-images.githubusercontent.com/89553126/134746200-6fbc815d-ff06-4cb2-ada1-34d71568e4e7.png">
+  
+Afterwards, I created the UI (User Interface) for the shiny application.  
 
-<img width="414" alt="Screen Shot 2021-09-24 at 5 22 23 PM" src="https://user-images.githubusercontent.com/89553126/134745522-26efde30-fe82-4380-b6c1-87b8be6f4e49.png">
- 
+ <img width="405" alt="Screen Shot 2021-09-24 at 5 30 11 PM" src="https://user-images.githubusercontent.com/89553126/134746178-12913537-44e1-45b1-a7c5-dc5ce39c8e57.png">
+  
+The UI is similar to the ingredients in a recipe. So lets list out the ingredients and what they do.
+
+*SelectInput* lets the user choise the data set they want to see.
+
+*verbatimTextOutput* will later on help us print the output of hte data.
+
+*plotOutput* will later help us be able to plot the data.
+
+<img width="1261" alt="Screen Shot 2021-09-24 at 5 39 03 PM" src="https://user-images.githubusercontent.com/89553126/134746506-5bdd6eb1-d4b6-4d07-ae0b-29abe56683f0.png">
+
+<img width="1261" alt="Screen Shot 2021-09-24 at 5 39 10 PM" src="https://user-images.githubusercontent.com/89553126/134746509-9cc8c9b6-6295-42ed-8e1b-911cc4750e23.png">
+
+<img width="1261" alt="Screen Shot 2021-09-24 at 5 39 16 PM" src="https://user-images.githubusercontent.com/89553126/134746513-aa330413-bbf0-4520-9ba9-0ba979c758dd.png">
