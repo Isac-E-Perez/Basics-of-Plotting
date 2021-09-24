@@ -19,6 +19,8 @@ Afterwards, I created the UI (User Interface) for the shiny application.
   
 The UI is similar to the ingredients in a recipe. So lets list out the ingredients and what they do.
 
+*fluidPage* creates a page with a fluid layout.
+
 *SelectInput* lets the user choise the data set they want to see.
 
 *verbatimTextOutput* will later on help us print the output of hte data.
