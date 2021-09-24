@@ -42,8 +42,6 @@ In this case, the *renderPrint* prints a summary of the dataset.
 *output$plot* variable is set to *renderPlot* which is paried with *plotOutput*. The *plotOutput* plots the dataset. The resolution is usually set to **96** so that the Shiny plots match what I see in RStudio as closely as possible.
  
 Finally, I write down the code *shinyApp(ui, server)* which constructs and starts the Shiny application from UI and server.
-
- <img width="150" alt="Screen Shot 2021-09-24 at 5 54 41 PM" src="https://user-images.githubusercontent.com/89553126/134747379-3c777c14-e246-4dfa-a397-ea8b88ae8a80.png">
  
 ### Finished Project: 
 
