@@ -43,7 +43,7 @@ In this case, the *renderPrint* prints a summary of the dataset.
  
 Finally, I write down the code *shinyApp(ui, server)* which constructs and starts the Shiny application from UI and server.
  
-### Finished Project: 
+### Final Product: 
 
 <img width="1261" alt="Screen Shot 2021-09-24 at 5 39 03 PM" src="https://user-images.githubusercontent.com/89553126/134746506-5bdd6eb1-d4b6-4d07-ae0b-29abe56683f0.png">
 
