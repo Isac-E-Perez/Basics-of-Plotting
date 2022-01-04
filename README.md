@@ -11,11 +11,19 @@ Dataset available on the R package.
 
 First, I set a variable called *datasets* to contain the data.
 
-<img width="352" alt="Screen Shot 2021-09-24 at 5 29 28 PM" src="https://user-images.githubusercontent.com/89553126/134746200-6fbc815d-ff06-4cb2-ada1-34d71568e4e7.png">
+```R
+datasets <- c("economics", "faithfuld", "seals")
+```
   
 Afterwards, I created the UI (User Interface) for the shiny application with a *fluidPage* layout. 
 
- <img width="405" alt="Screen Shot 2021-09-24 at 5 30 11 PM" src="https://user-images.githubusercontent.com/89553126/134746178-12913537-44e1-45b1-a7c5-dc5ce39c8e57.png">
+```R
+ui <- fluidPage(
+  selectInput("dataset", "Dataset", choices = datasets),
+  verbatimTextOutput("summary"),
+  plotOutput("plot")
+)
+```
   
 The UI is similar to the ingredients in a recipe. So lets list out the ingredients and what they do.
  
@@ -27,7 +35,21 @@ The UI is similar to the ingredients in a recipe. So lets list out the ingredien
 
 Now lets focus on the server. The server is the directions in the recipe. The ingredients will be used as the directions describes them.
 
-<img width="327" alt="Screen Shot 2021-09-24 at 5 42 37 PM" src="https://user-images.githubusercontent.com/89553126/134746674-9b161cd0-e9fb-4587-b838-126ad4b9d380.png">
+```R
+
+server <- function(input, output, session) {
+  dataset <- reactive({
+    get(input$dataset, "package:ggplot2")
+  })
+  output$summary <- renderPrint({
+    summary(dataset())
+  })
+  output$plot <- renderPlot({
+    plot(dataset)
+  }, res = 96)
+}
+shinyApp(ui, server)
+```
 
 So lets list out the directions and what they do.
 
